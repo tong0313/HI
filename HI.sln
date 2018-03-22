@@ -1,22 +1,47 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HI", "HI\HI.csproj", "{8C2BBE59-39FD-41F2-8FA8-D98DC5123CE0}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8C2BBE59-39FD-41F2-8FA8-D98DC5123CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C2BBE59-39FD-41F2-8FA8-D98DC5123CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C2BBE59-39FD-41F2-8FA8-D98DC5123CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C2BBE59-39FD-41F2-8FA8-D98DC5123CE0}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-EndGlobal
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 0; 
+
+            
+            // 產生亂數物件
+
+            Random rand = new Random();
+
+
+
+
+            // 顯示
+            while (n < 10)
+            {
+                
+            // 用亂數物件產生亂數
+
+            int r1 = rand.Next(0 , 43);
+            int r2 = rand.Next(0 , 43);
+            int r3 = rand.Next(0 , 43);  
+            int r4 = rand.Next(0 , 43);
+            int r5 = rand.Next(0 , 43);
+            int r6 = rand.Next(0 , 43);
+                Console.WriteLine("號碼:[{0:00}] {1:00} {2:00} {3:00} {4:00} {5:00} ",n, r1, r2, r3, r4, r5, r6);
+                n++; 
+            }
+            // 防止視窗自動關閉
+           
+
+            Console.ReadLine();
+
+
+        }
+        
+    }
+}
